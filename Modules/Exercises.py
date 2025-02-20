@@ -34,3 +34,11 @@ def randonuserid ():
     return randonuseridresult
 
 print(randonuserid())
+
+def user_id_gen_by_user():
+    nchar = int(input('Number the characters: '))
+    nids = int(input('Number of IDs: '))
+    for i in range (nids):
+        print(''.join(random.choice(string.ascii_letters+string.digits) for i in range(nchar)))
+
+user_id_gen_by_user()
