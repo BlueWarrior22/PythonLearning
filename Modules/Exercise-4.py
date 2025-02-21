@@ -8,7 +8,6 @@ def generate_colors(codi, numbers):
             hexa_random = '#'+''.join(random.choices(string.hexdigits, k=6))
             hexa_color.append(str(hexa_random))
         return(hexa_color)
-    
     elif codi == 'rgb':
         rgb_color = []
         for i in range(numbers):
@@ -19,6 +18,6 @@ def generate_colors(codi, numbers):
             rgb_color.append(rgb_random)
         return(rgb_color)
     else:
-        return('no hexa')
+        return('no color')
 
 print(generate_colors('rgb', 3))
