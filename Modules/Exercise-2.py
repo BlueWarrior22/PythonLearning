@@ -9,7 +9,7 @@ import random
 import string
 
 def list_of_hexa_colors ():
-    hexa_color = ''.join(random.choices(string.hexdigits, k=6))
-    return print(f'#{hexa_color}')
+    hexa_color = ["#"+"".join(random.choices(string.hexdigits, k=6))]
+    return print(hexa_color)
 
 list_of_hexa_colors()

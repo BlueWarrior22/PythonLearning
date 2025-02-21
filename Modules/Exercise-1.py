@@ -51,4 +51,4 @@ def rgb_color_gen():
     blue = random.randint(0, 255)
     print(f'rgb ({red}, {green}, {blue})')
 
-rgb_color_gen()
+rgb_color_gen()     
