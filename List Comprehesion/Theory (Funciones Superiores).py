@@ -1,5 +1,5 @@
-#In Python the high-order functions (HOF) are functions that can take other functions as argument or return functions as results.
-#HOF are a fundamental concept in functional programming.
+# In Python the high-order functions (HOF) are functions that can take other functions as argument or return functions as results.
+# HOF are a fundamental concept in functional programming.
 
 def operar (v1, v2, fn):
     return fn (v1, v2)
