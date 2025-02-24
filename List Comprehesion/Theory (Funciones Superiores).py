@@ -16,14 +16,14 @@ def multplicar (x1,x2):
 def dividir (x1,x2):
     return x1 / x2
 
-result1 = operar(5, 6, sumar)
+result1 = operar(5, 6, sumar) #HOF
 print(result1)
 
-result2 = operar(21, 6, restar)
+result2 = operar(21, 6, restar) #HOF
 print(result2)
 
-result3 = operar(10, 8, multplicar)
+result3 = operar(10, 8, multplicar) #HOF
 print(result3)
 
-result4 = operar(24, 4, dividir)
+result4 = operar(24, 4, dividir) #HOF
 print(result4)
