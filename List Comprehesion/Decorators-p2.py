@@ -43,3 +43,15 @@ def tarea_1():
     print("Tarea completada.")
 
 tarea_1()
+
+def decorador_con_parametros(func):
+    def envoltura(p1, p2, p3):
+        func(p1, p2, p3)
+        print('{} vive en {}'.format(p1, p3))
+    return envoltura
+
+@decorador_con_parametros
+def imprimir_nombre_completo(nm1, ap1, pa1):
+    print('Hola, Mi nombre completo es {} {}.'.format(nm1, ap1, pa1))
+
+imprimir_nombre_completo('Javier', 'Perez', 'Nicaragua')
