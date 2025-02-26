@@ -37,3 +37,33 @@ users_age = (list(map(lambda age: age["edad"], personas)))
 
 print(users_names)
 print(users_age)
+
+#1️⃣ Convertir Celsius a Fahrenheit
+
+celsius = [0, 10, 20, 30, 40]
+
+fahrenheit = (list(map(lambda c: (c * 9/5) + 32, celsius)))
+
+print(fahrenheit)
+
+#2️⃣ Capitalizar nombres en una lista
+
+nombres = ["ana", "pedro", "maria", "juan"]
+
+mayusculas = (list(map(lambda m: str.upper(m), nombres)))
+
+print(mayusculas)
+
+#3️⃣ Obtener longitudes de palabras
+
+palabras = ["Python", "Decorators", "Map", "Function"]
+
+longitud_palabras = list(map(len, palabras))
+
+print(longitud_palabras)
+
+emails = ["user1@gmail.com", "user2@yahoo.com", "user3@outlook.com"]
+
+dominios = list(map(lambda d: d.split("@")[1], emails))
+
+print(dominios)
