@@ -67,3 +67,26 @@ emails = ["user1@gmail.com", "user2@yahoo.com", "user3@outlook.com"]
 dominios = list(map(lambda d: d.split("@")[1], emails))
 
 print(dominios)
+
+#Question: Write a program which will find all such numbers which are divisible by 7 
+# but are not a multiple of 5, between 2000 and 3200 (both included). 
+# The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+numbers = list(range(2000,3200))
+
+numbers_f = list(filter(lambda x: x % 7 == 0 and x % 5 != 0, numbers))
+
+print(numbers_f)
+
+from functools import reduce
+
+cadena_str = reduce(lambda acomulador, numero: acomulador + '' + numero, str(numbers_f))
+
+print(cadena_str)
+
+l=[]
+for i in range(2000, 3201):
+    if (i%7==0) and (i%5!=0):
+        l.append(str(i))
+
+print(','.join(l))
